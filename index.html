@@ -16,61 +16,72 @@
   .wrap{ max-width:1120px; margin:0 auto; }
   h1{ font-size:23px; color:var(--tint-dp); }
   .sub{ color:#6b7780; font-size:13px; margin-top:2px; }
+
   .barra{ background:var(--card); border-radius:13px; padding:12px 14px; margin:12px 0;
     box-shadow:0 2px 8px rgba(0,0,0,.06); display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
   select,input,textarea{ font-family:inherit; font-size:14px; padding:8px 10px;
     border:1.5px solid #d4dade; border-radius:8px; }
-  select{ min-width:160px; } textarea{ width:100%; resize:vertical; min-height:60px; }
+  select{ min-width:150px; } textarea{ width:100%; resize:vertical; min-height:60px; }
   .btn{ border:none; border-radius:8px; font-weight:700; font-size:13px; padding:9px 14px;
     color:#fff; cursor:pointer; background:var(--tint); }
   .btn:hover{ background:var(--tint-dp); }
   .btn.cinza{ background:#7d8a92; } .btn.cinza:hover{ background:#67737a; }
   .salvo{ font-size:12px; color:#8a949b; margin-left:auto; }
   .sep{ width:1px; height:24px; background:var(--linha); }
+
   .abas{ display:flex; gap:6px; flex-wrap:wrap; margin:6px 0 12px; }
   .aba{ background:#e7edee; color:#5a6b73; border:none; border-radius:9px 9px 0 0;
     padding:11px 16px; font-size:14px; font-weight:700; cursor:pointer; }
   .aba.ativa{ background:var(--card); color:var(--tint-dp); box-shadow:0 -2px 6px rgba(0,0,0,.05); }
+
   .painel{ background:var(--card); border-radius:0 13px 13px 13px; padding:16px;
     box-shadow:0 2px 8px rgba(0,0,0,.06); }
   .subbar{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:14px;
     padding-bottom:12px; border-bottom:1px solid var(--linha); }
+
   .resumo{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
-  .pill{ background:#f4f7f8; border-radius:10px; padding:8px 13px; font-size:13px;
-    display:flex; gap:7px; align-items:center; }
+  .pill{ background:#f4f7f8; border-radius:10px; padding:8px 13px; font-size:13px; display:flex; gap:7px; align-items:center; }
   .pill b{ font-size:15px; }
   .dot{ width:11px; height:11px; border-radius:50%; display:inline-block; }
   .dot.v{ background:var(--verde);} .dot.a{ background:var(--amarelo);} .dot.r{ background:var(--vermelho);}
+
   .tabelaWrap{ overflow:auto; max-height:58vh; border:1px solid var(--linha); border-radius:10px; }
   table{ border-collapse:separate; border-spacing:0; width:100%; }
   th,td{ border-bottom:1px solid var(--linha); border-right:1px solid var(--linha); padding:0; text-align:center; font-size:13px; }
   thead th{ position:sticky; top:0; z-index:3; background:#eef3f4; color:var(--tint-dp);
-    font-weight:700; padding:9px 7px; min-width:66px; white-space:nowrap; }
-  thead th .x,.nomeAluno .x{ cursor:pointer; color:#bcc6cb; font-weight:700; margin-left:4px; }
-  thead th .x:hover,.nomeAluno .x:hover{ color:var(--vermelho); }
+    font-weight:700; padding:9px 7px; min-width:70px; white-space:nowrap; }
   .colAluno{ position:sticky; left:0; z-index:2; background:var(--card); text-align:left;
-    padding:9px 11px; min-width:170px; font-weight:600; }
+    padding:9px 11px; min-width:190px; font-weight:600; }
   thead .colAluno{ z-index:5; background:#eef3f4; }
   .colFim{ position:sticky; right:0; z-index:2; background:var(--card); min-width:112px; }
   thead .colFim{ z-index:5; background:#eef3f4; }
   tbody tr:hover td,tbody tr:hover .colAluno{ background:#f7fbfb; }
-  .nomeAluno{ display:flex; justify-content:space-between; align-items:center; gap:6px; }
+  .nomeAluno{ display:flex; justify-content:space-between; align-items:center; gap:4px; }
+  .nomeAluno span:first-child{ flex:1; }
+  .x,.edt{ cursor:pointer; color:#aab4ba; font-weight:700; font-size:15px; padding:0 3px; }
+  .edt:hover{ color:var(--tint); } .x:hover{ color:var(--vermelho); }
+
   .cel{ width:100%; height:42px; cursor:pointer; font-size:17px; font-weight:800;
     display:flex; align-items:center; justify-content:center; user-select:none; }
   .s0{ color:#c2cacf; } .s1{ background:rgba(43,182,115,.16); color:var(--verde); }
   .s2{ background:rgba(232,169,60,.18); color:var(--amarelo); }
   .s3{ background:rgba(225,87,76,.15); color:var(--vermelho); }
+
   .badge{ display:inline-block; font-weight:700; font-size:12px; padding:4px 9px; border-radius:18px; }
   .badge.v{ background:rgba(43,182,115,.16); color:#1c7a4e; }
   .badge.a{ background:rgba(232,169,60,.2); color:#9a6a12; }
   .badge.r{ background:rgba(225,87,76,.16); color:#a83228; }
   .badge.n{ background:#eef1f3; color:#8a949b; }
   .pct{ font-size:10px; color:#8a949b; display:block; margin-top:2px; }
+
   .legenda{ font-size:12px; color:#6b7780; display:flex; gap:14px; flex-wrap:wrap; margin-top:10px; align-items:center; }
   .legenda span{ display:flex; align-items:center; gap:5px; }
   .qd{ width:14px; height:14px; border-radius:4px; display:inline-block; }
+
   .vazio{ padding:34px; text-align:center; color:#6b7780; }
   .vazio h3{ color:var(--tint-dp); margin-bottom:8px; }
+  .vazio ol{ display:inline-block; text-align:left; line-height:1.8; margin-top:6px; }
+
   .notas{ display:flex; flex-direction:column; gap:8px; margin-top:12px; }
   .nota{ display:flex; gap:10px; align-items:flex-start; background:#f6f8f9; border-radius:9px;
     padding:10px 12px; border-left:5px solid #ccc; }
@@ -80,16 +91,28 @@
   .nota .txt{ flex:1; font-size:14px; }
   .nota .rem{ cursor:pointer; color:#c2cacf; font-weight:700; }
   .nota .rem:hover{ color:var(--vermelho); }
+
   .boletim{ border:1px solid var(--linha); border-radius:12px; padding:26px; margin-top:14px; }
   .boletim h2{ color:var(--tint-dp); font-size:22px; }
   .boletim .meta{ color:#6b7780; font-size:13px; margin:4px 0 16px; }
   .boletim .bloco{ margin:16px 0; }
-  .boletim .bloco h4{ font-size:15px; color:var(--tint-dp); border-bottom:2px solid var(--linha);
-    padding-bottom:5px; margin-bottom:10px; }
+  .boletim .bloco h4{ font-size:15px; color:var(--tint-dp); border-bottom:2px solid var(--linha); padding-bottom:5px; margin-bottom:10px; }
   .miniTab{ width:100%; border-collapse:collapse; font-size:13px; }
   .miniTab td{ border:1px solid var(--linha); padding:6px 9px; text-align:left; }
   .assinatura{ margin-top:36px; display:flex; justify-content:space-between; gap:30px; }
   .assinatura div{ flex:1; border-top:1.5px solid #999; padding-top:6px; font-size:13px; color:#666; text-align:center; }
+
+  /* MODAL + TOAST (funcionam dentro do quadro) */
+  .overlay{ position:fixed; inset:0; background:rgba(20,30,36,.45); display:flex; align-items:center;
+    justify-content:center; z-index:9999; padding:16px; }
+  .modal{ background:#fff; border-radius:14px; padding:22px; max-width:400px; width:100%;
+    box-shadow:0 14px 50px rgba(0,0,0,.35); }
+  .modal p{ font-size:16px; margin-bottom:14px; color:var(--ink); }
+  .modal input{ width:100%; font-size:16px; padding:11px; border:1.5px solid #d4dade; border-radius:9px; margin-bottom:16px; }
+  .modal .acoes{ display:flex; gap:10px; justify-content:flex-end; }
+  .toast{ position:fixed; bottom:22px; left:50%; transform:translateX(-50%); background:#23303a; color:#fff;
+    padding:12px 20px; border-radius:10px; font-size:14px; z-index:99999; box-shadow:0 6px 20px rgba(0,0,0,.35); }
+
   @media print{
     body{ background:#fff; padding:0; }
     .noprint{ display:none !important; }
@@ -102,194 +125,238 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>&#128203; Painel do Professor &#8212; Inglês</h1>
+  <h1>📋 Painel do Professor — Inglês</h1>
   <div class="sub noprint">Desempenho · Frequência · Evolução · Comportamento · Boletim. Salva sozinho neste navegador.</div>
+
   <div class="barra noprint">
     <label style="font-weight:700;font-size:13px">Turma:</label>
     <select id="selTurma" onchange="trocarTurma(this.value)"></select>
-    <input id="novaTurma" placeholder="Ex: Inglês 6º A" style="min-width:140px" onkeydown="if(event.key==='Enter')addTurma()">
+    <input id="novaTurma" placeholder="Ex: Inglês 6º A" style="min-width:130px" onkeydown="if(event.key==='Enter')addTurma()">
     <button class="btn" onclick="addTurma()">+ Turma</button>
-    <button class="btn cinza" id="btnDelTurma" onclick="delTurma()">&#128465; Excluir</button>
+    <button class="btn cinza" id="btnRenTurma" onclick="renomearTurma()">✎ Renomear</button>
+    <button class="btn cinza" id="btnDelTurma" onclick="delTurma()">🗑 Excluir</button>
     <div class="sep"></div>
-    <input id="profNome" placeholder="Professor(a)" style="min-width:150px" oninput="setProf(this.value)">
+    <input id="profNome" placeholder="Professor(a)" style="min-width:140px" oninput="setProf(this.value)">
     <span class="salvo" id="salvo"></span>
   </div>
+
   <div class="barra noprint" style="margin-top:-4px">
-    <button class="btn cinza" onclick="baixarBackup()">&#128190; Baixar backup</button>
-    <button class="btn cinza" onclick="document.getElementById('arq').click()">&#128194; Abrir backup</button>
+    <button class="btn cinza" onclick="baixarBackup()">💾 Baixar backup</button>
+    <button class="btn cinza" onclick="document.getElementById('arq').click()">📂 Abrir backup</button>
     <input type="file" id="arq" accept=".json" style="display:none" onchange="abrirBackup(event)">
   </div>
+
   <div class="abas noprint">
-    <button class="aba" data-tab="licoes"        onclick="irAba('licoes')">&#128218; Lições</button>
-    <button class="aba" data-tab="frequencia"    onclick="irAba('frequencia')">&#128197; Frequência</button>
-    <button class="aba" data-tab="evolucao"      onclick="irAba('evolucao')">&#128200; Evolução</button>
-    <button class="aba" data-tab="comportamento" onclick="irAba('comportamento')">&#11088; Comportamento</button>
-    <button class="aba" data-tab="boletim"       onclick="irAba('boletim')">&#128424;&#65039; Boletim</button>
+    <button class="aba" data-tab="licoes"        onclick="irAba('licoes')">📚 Lições</button>
+    <button class="aba" data-tab="frequencia"    onclick="irAba('frequencia')">📅 Frequência</button>
+    <button class="aba" data-tab="evolucao"      onclick="irAba('evolucao')">📈 Evolução</button>
+    <button class="aba" data-tab="comportamento" onclick="irAba('comportamento')">⭐ Comportamento</button>
+    <button class="aba" data-tab="boletim"       onclick="irAba('boletim')">🖨️ Boletim</button>
   </div>
+
   <div class="sec painel" id="sec-licoes"></div>
   <div class="sec painel" id="sec-frequencia"></div>
   <div class="sec painel" id="sec-evolucao"></div>
   <div class="sec painel" id="sec-comportamento"></div>
   <div class="sec" id="sec-boletim"></div>
 </div>
+
 <script>
-var dados = { turmas:[], atual:null, professor:'' };
-var ui = { tab:'licoes', evoAluno:null, compAluno:null, boletimAluno:'__todos__' };
-var SD=['','\u2713','\u25d0','\u2715'];
-var SP=['','P','F','A'];
-var SCORE={1:100,2:50,3:0};
+/* ===== ESTADO ===== */
+let dados = { turmas:[], atual:null, professor:'' };
+let ui = { tab:'licoes', evoAluno:null, compAluno:null, boletimAluno:'__todos__' };
+const SD=['','✓','◐','✕'];
+const SP=['','P','F','A'];
+const SCORE={1:100,2:50,3:0};
 
 function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,6); }
-function T(){ return dados.turmas.find(function(t){return t.id===dados.atual;})||null; }
+function T(){ return dados.turmas.find(t=>t.id===dados.atual)||null; }
 function hoje(){ try{ return new Date().toLocaleDateString('pt-BR'); }catch(e){ return ''; } }
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-async function salvar(){
-  var j=JSON.stringify(dados);
-  try{ localStorage.setItem('painel_prof_ingles',j); }catch(e){}
-  var s=document.getElementById('salvo'); s.textContent='\u2713 salvo';
-  clearTimeout(window._t); window._t=setTimeout(function(){s.textContent='';},1400);
+/* ===== MODAIS (substituem confirm/prompt/alert que o quadro bloqueia) ===== */
+function aviso(msg){ const d=document.createElement('div'); d.className='toast'; d.textContent=msg; document.body.appendChild(d); setTimeout(()=>d.remove(),2200); }
+function modalConfirma(msg, onOk){
+  const ov=document.createElement('div'); ov.className='overlay';
+  ov.innerHTML='<div class="modal"><p></p><div class="acoes"><button class="btn cinza" id="mC">Cancelar</button><button class="btn" id="mO" style="background:var(--vermelho)">Confirmar</button></div></div>';
+  ov.querySelector('p').textContent=msg; document.body.appendChild(ov);
+  ov.querySelector('#mC').onclick=()=>ov.remove();
+  ov.querySelector('#mO').onclick=()=>{ ov.remove(); onOk(); };
+  ov.onclick=e=>{ if(e.target===ov)ov.remove(); };
+}
+function modalPrompt(msg, valor, onOk){
+  const ov=document.createElement('div'); ov.className='overlay';
+  ov.innerHTML='<div class="modal"><p></p><input id="mI"><div class="acoes"><button class="btn cinza" id="mC">Cancelar</button><button class="btn" id="mO">Salvar</button></div></div>';
+  ov.querySelector('p').textContent=msg; document.body.appendChild(ov);
+  const inp=ov.querySelector('#mI'); inp.value=valor||''; setTimeout(()=>{inp.focus();inp.select();},30);
+  const ok=()=>{ const v=inp.value; ov.remove(); onOk(v); };
+  ov.querySelector('#mC').onclick=()=>ov.remove();
+  ov.querySelector('#mO').onclick=ok;
+  inp.onkeydown=e=>{ if(e.key==='Enter')ok(); };
+  ov.onclick=e=>{ if(e.target===ov)ov.remove(); };
 }
 
+/* ===== PERSISTÊNCIA ===== */
+async function salvar(){
+  const j=JSON.stringify(dados); let ok=false;
+  try{ if(window.storage&&window.storage.set){ await window.storage.set('painel_prof_ingles',j); ok=true; } }catch(e){}
+  if(!ok){ try{ localStorage.setItem('painel_prof_ingles',j); }catch(e){} }
+  const s=document.getElementById('salvo'); s.textContent='✓ salvo';
+  clearTimeout(window._t); window._t=setTimeout(()=>s.textContent='',1400);
+}
 async function carregar(){
-  var j=null;
-  try{ j=localStorage.getItem('painel_prof_ingles'); }catch(e){}
+  let j=null;
+  try{ if(window.storage&&window.storage.get){ const r=await window.storage.get('painel_prof_ingles'); if(r&&r.value)j=r.value; } }catch(e){}
+  if(!j){ try{ j=localStorage.getItem('painel_prof_ingles'); }catch(e){} }
   if(j){ try{ dados=JSON.parse(j); }catch(e){} }
   if(!dados.turmas) dados.turmas=[];
   if(dados.professor==null) dados.professor='';
   if(dados.atual==null&&dados.turmas.length) dados.atual=dados.turmas[0].id;
 }
 
+/* ===== TURMA / GERAL ===== */
 function migra(t){ t.alunos=t.alunos||[]; t.licoes=t.licoes||[]; t.datas=t.datas||[];
   t.desempenho=t.desempenho||{}; t.presenca=t.presenca||{}; t.comportamento=t.comportamento||{}; return t; }
-
 function addTurma(){
-  var i=document.getElementById('novaTurma'); var n=i.value.trim(); if(!n)return;
-  var t=migra({id:uid(),nome:n}); dados.turmas.push(t); dados.atual=t.id; i.value='';
-  render(); salvar();
+  const i=document.getElementById('novaTurma'); const n=i.value.trim(); if(!n)return;
+  const t=migra({id:uid(),nome:n}); dados.turmas.push(t); dados.atual=t.id; i.value=''; render(); salvar();
 }
 function trocarTurma(id){ dados.atual=id; ui.evoAluno=ui.compAluno=null; ui.boletimAluno='__todos__'; render(); salvar(); }
-function delTurma(){ var t=T(); if(!t)return; if(!confirm('Excluir a turma "'+t.nome+'" e tudo dela?'))return;
-  dados.turmas=dados.turmas.filter(function(x){return x.id!==t.id;}); dados.atual=dados.turmas.length?dados.turmas[0].id:null; render(); salvar(); }
+function renomearTurma(){ const t=T(); if(!t)return; modalPrompt('Nome da turma:', t.nome, v=>{ if(v&&v.trim()){ t.nome=v.trim(); render(); salvar(); } }); }
+function delTurma(){ const t=T(); if(!t)return; modalConfirma('Excluir a turma "'+t.nome+'" e tudo dela?', ()=>{
+  dados.turmas=dados.turmas.filter(x=>x.id!==t.id); dados.atual=dados.turmas.length?dados.turmas[0].id:null; render(); salvar(); }); }
 function setProf(v){ dados.professor=v; clearTimeout(window._p); window._p=setTimeout(salvar,500); }
 
+/* ===== ALUNOS / COLUNAS ===== */
 function addAlunoFrom(inputId){
-  var t=T(); if(!t){ alert('Crie uma turma primeiro.'); return; }
-  var i=document.getElementById(inputId);
-  i.value.split(/[,\n;]+/).map(function(s){return s.trim();}).filter(Boolean).forEach(function(n){t.alunos.push({id:uid(),nome:n});});
+  const t=T(); if(!t){ aviso('Crie uma turma primeiro.'); return; }
+  const i=document.getElementById(inputId);
+  i.value.split(/[,\n;]+/).map(s=>s.trim()).filter(Boolean).forEach(n=>t.alunos.push({id:uid(),nome:n}));
   i.value=''; render(); salvar();
 }
-function delAluno(id){ var t=T(); if(!confirm('Remover este aluno?'))return;
-  t.alunos=t.alunos.filter(function(a){return a.id!==id;}); delete t.desempenho[id]; delete t.presenca[id]; delete t.comportamento[id];
-  render(); salvar(); }
-function addLicao(){ var t=T(); var i=document.getElementById('novaLicao');
-  i.value.split(/[,\n;]+/).map(function(s){return s.trim();}).filter(Boolean).forEach(function(n){t.licoes.push({id:uid(),nome:n});});
+function editAluno(id){ const t=T(); const a=t.alunos.find(x=>x.id===id); if(!a)return;
+  modalPrompt('Corrigir nome do aluno:', a.nome, v=>{ if(v&&v.trim()){ a.nome=v.trim(); render(); salvar(); } }); }
+function delAluno(id){ const t=T(); const a=t.alunos.find(x=>x.id===id);
+  modalConfirma('Remover o aluno "'+(a?a.nome:'')+'"?', ()=>{
+    t.alunos=t.alunos.filter(x=>x.id!==id); delete t.desempenho[id]; delete t.presenca[id]; delete t.comportamento[id];
+    render(); salvar(); }); }
+function addLicao(){ const t=T(); const i=document.getElementById('novaLicao');
+  i.value.split(/[,\n;]+/).map(s=>s.trim()).filter(Boolean).forEach(n=>t.licoes.push({id:uid(),nome:n}));
   i.value=''; render(); salvar(); }
-function delLicao(id){ var t=T(); if(!confirm('Remover esta li\u00e7\u00e3o?'))return;
-  t.licoes=t.licoes.filter(function(x){return x.id!==id;}); for(var a in t.desempenho){ if(t.desempenho[a])delete t.desempenho[a][id]; }
-  render(); salvar(); }
-function addDataHoje(){ var t=T(); t.datas.push({id:uid(),rotulo:hoje()}); render(); salvar(); }
-function addDataCustom(){ var t=T(); var i=document.getElementById('novaData'); var v=i.value.trim();
+function editLicao(id){ const t=T(); const l=t.licoes.find(x=>x.id===id); if(!l)return;
+  modalPrompt('Corrigir nome da lição:', l.nome, v=>{ if(v&&v.trim()){ l.nome=v.trim(); render(); salvar(); } }); }
+function delLicao(id){ const t=T(); const l=t.licoes.find(x=>x.id===id);
+  modalConfirma('Remover a lição "'+(l?l.nome:'')+'"?', ()=>{
+    t.licoes=t.licoes.filter(x=>x.id!==id); for(const a in t.desempenho){ if(t.desempenho[a])delete t.desempenho[a][id]; }
+    render(); salvar(); }); }
+function addDataHoje(){ const t=T(); t.datas.push({id:uid(),rotulo:hoje()}); render(); salvar(); }
+function addDataCustom(){ const t=T(); const i=document.getElementById('novaData'); const v=i.value.trim();
   if(v){ t.datas.push({id:uid(),rotulo:v}); i.value=''; render(); salvar(); } }
-function delData(id){ var t=T(); if(!confirm('Remover esta aula?'))return;
-  t.datas=t.datas.filter(function(x){return x.id!==id;}); for(var a in t.presenca){ if(t.presenca[a])delete t.presenca[a][id]; }
-  render(); salvar(); }
-function cicloD(al,li){ var t=T(); if(!t.desempenho[al])t.desempenho[al]={};
+function editData(id){ const t=T(); const d=t.datas.find(x=>x.id===id); if(!d)return;
+  modalPrompt('Corrigir a data/aula:', d.rotulo, v=>{ if(v&&v.trim()){ d.rotulo=v.trim(); render(); salvar(); } }); }
+function delData(id){ const t=T(); const d=t.datas.find(x=>x.id===id);
+  modalConfirma('Remover a aula "'+(d?d.rotulo:'')+'"?', ()=>{
+    t.datas=t.datas.filter(x=>x.id!==id); for(const a in t.presenca){ if(t.presenca[a])delete t.presenca[a][id]; }
+    render(); salvar(); }); }
+
+function cicloD(al,li){ const t=T(); if(!t.desempenho[al])t.desempenho[al]={};
   t.desempenho[al][li]=((t.desempenho[al][li]||0)+1)%4; render(); salvar(); }
-function cicloP(al,da){ var t=T(); if(!t.presenca[al])t.presenca[al]={};
+function cicloP(al,da){ const t=T(); if(!t.presenca[al])t.presenca[al]={};
   t.presenca[al][da]=((t.presenca[al][da]||0)+1)%4; render(); salvar(); }
 
+/* ===== CÁLCULOS ===== */
 function aproveitamento(t,al){
-  var tot=t.licoes.length; if(!tot)return{pct:null};
-  var s=0; t.licoes.forEach(function(l){ var v=(t.desempenho[al]||{})[l.id]||0; if(v===1)s+=1; else if(v===2)s+=.5; });
-  var pct=Math.round(s/tot*100); var cls='r',txt='Atrasado';
-  if(pct>=80){cls='v';txt='Em dia';} else if(pct>=40){cls='a';txt='Aten\u00e7\u00e3o';}
-  return{pct:pct,cls:cls,txt:txt};
+  const tot=t.licoes.length; if(!tot)return{pct:null};
+  let s=0; t.licoes.forEach(l=>{ const v=(t.desempenho[al]||{})[l.id]||0; if(v===1)s+=1; else if(v===2)s+=.5; });
+  const pct=Math.round(s/tot*100); let cls='r',txt='Atrasado';
+  if(pct>=80){cls='v';txt='Em dia';} else if(pct>=40){cls='a';txt='Atenção';}
+  return{pct,cls,txt};
 }
 function freq(t,al){
-  var p=0,f=0,a=0; t.datas.forEach(function(d){ var v=(t.presenca[al]||{})[d.id]||0; if(v===1)p++; else if(v===2)f++; else if(v===3)a++; });
-  var reg=p+f+a; var pct=reg?Math.round((p+a)/reg*100):null;
-  return{p:p,f:f,a:a,reg:reg,pct:pct};
+  let p=0,f=0,a=0; t.datas.forEach(d=>{ const v=(t.presenca[al]||{})[d.id]||0; if(v===1)p++; else if(v===2)f++; else if(v===3)a++; });
+  const reg=p+f+a; const pct=reg?Math.round((p+a)/reg*100):null;
+  return{p,f,a,reg,pct};
 }
 
+/* ===== RENDER ===== */
 function irAba(tab){ ui.tab=tab; render(); }
-
 function render(){
-  var sel=document.getElementById('selTurma'); sel.innerHTML='';
-  dados.turmas.forEach(function(t){ var o=document.createElement('option'); o.value=t.id; o.textContent=t.nome;
+  const sel=document.getElementById('selTurma'); sel.innerHTML='';
+  dados.turmas.forEach(t=>{ const o=document.createElement('option'); o.value=t.id; o.textContent=t.nome;
     if(t.id===dados.atual)o.selected=true; sel.appendChild(o); });
   document.getElementById('profNome').value=dados.professor||'';
-  document.getElementById('btnDelTurma').style.display=T()?'inline-block':'none';
-  document.querySelectorAll('.aba').forEach(function(b){b.classList.toggle('ativa', b.dataset.tab===ui.tab);});
-  document.querySelectorAll('.sec').forEach(function(s){s.style.display='none';});
-  var sec=document.getElementById('sec-'+ui.tab); if(sec)sec.style.display='block';
-  var t=T();
-  if(!t){ mostrarVazioTodas('<h3>Crie sua turma \u2191</h3><p>Digite o nome l\u00e1 em cima e clique em <b>+ Turma</b>.</p>'); return; }
+  const has=!!T();
+  document.getElementById('btnDelTurma').style.display=has?'inline-block':'none';
+  document.getElementById('btnRenTurma').style.display=has?'inline-block':'none';
+
+  document.querySelectorAll('.aba').forEach(b=>b.classList.toggle('ativa', b.dataset.tab===ui.tab));
+  document.querySelectorAll('.sec').forEach(s=>s.style.display='none');
+  const sec=document.getElementById('sec-'+ui.tab); if(sec)sec.style.display='block';
+
+  const t=T();
+  if(!t){ mostrarVazioTodas('<h3>Crie sua turma 👆</h3><p>Digite o nome lá em cima e clique em <b>+ Turma</b>.</p>'); return; }
   t.alunos=t.alunos||[];
   renderLicoes(t); renderFrequencia(t); renderEvolucao(t); renderComportamento(t); renderBoletim(t);
 }
-
 function mostrarVazioTodas(html){
-  ['licoes','frequencia','evolucao','comportamento'].forEach(function(s){
-    document.getElementById('sec-'+s).innerHTML='<div class="vazio">'+html+'</div>'; });
+  ['licoes','frequencia','evolucao','comportamento'].forEach(s=>{ document.getElementById('sec-'+s).innerHTML='<div class="vazio">'+html+'</div>'; });
   document.getElementById('sec-boletim').innerHTML='';
 }
-
 function rosterAddHTML(inputId){
-  return '<input id="'+inputId+'" placeholder="Nome do aluno (cole v\u00e1rios com v\u00edrgula)" style="min-width:280px" onkeydown="if(event.key==='Enter')addAlunoFrom(''+inputId+'')">'
-    +'<button class="btn" onclick="addAlunoFrom(''+inputId+'')">+ Aluno</button>';
+  return '<input id="'+inputId+'" placeholder="Nome do aluno (cole vários com vírgula)" style="min-width:280px" onkeydown="if(event.key===\'Enter\')addAlunoFrom(\''+inputId+'\')">'
+    +'<button class="btn" onclick="addAlunoFrom(\''+inputId+'\')">+ Aluno</button>';
 }
+function vazioAlunos(){ return '<div class="vazio"><h3>Adicione os alunos 👆</h3><p>Pode colar a turma toda de uma vez, separando por vírgula.</p></div>'; }
 
-function vazioAlunos(){ return '<div class="vazio"><h3>Adicione os alunos \u2191</h3><p>Pode colar a turma toda de uma vez, separando por v\u00edrgula.</p></div>'; }
-
+/* ---- LIÇÕES ---- */
 function renderLicoes(t){
-  var el=document.getElementById('sec-licoes');
-  var h='<div class="subbar">'+rosterAddHTML('novoAluno')+'<div class="sep"></div>'
-    +'<input id="novaLicao" placeholder="Li\u00e7\u00e3o (ex: Unidade 1)" onkeydown="if(event.key==='Enter')addLicao()">'
-    +'<button class="btn" onclick="addLicao()">+ Li\u00e7\u00e3o</button></div>';
+  const el=document.getElementById('sec-licoes');
+  let h='<div class="subbar">'+rosterAddHTML('novoAluno')+'<div class="sep"></div>'
+    +'<input id="novaLicao" placeholder="Lição (ex: Unidade 1, Speak L1)" onkeydown="if(event.key===\'Enter\')addLicao()">'
+    +'<button class="btn" onclick="addLicao()">+ Lição</button></div>';
   if(!t.alunos.length){ el.innerHTML=h+vazioAlunos(); return; }
-  var v=0,a=0,r=0; t.alunos.forEach(function(al){ var e=aproveitamento(t,al.id); if(e.pct!=null){ if(e.cls==='v')v++; else if(e.cls==='a')a++; else r++; } });
+  let v=0,a=0,r=0; t.alunos.forEach(al=>{ const e=aproveitamento(t,al.id); if(e.pct!=null){ if(e.cls==='v')v++; else if(e.cls==='a')a++; else r++; } });
   if(t.licoes.length) h+='<div class="resumo"><div class="pill"><span class="dot v"></span>Em dia <b>'+v+'</b></div>'
-    +'<div class="pill"><span class="dot a"></span>Aten\u00e7\u00e3o <b>'+a+'</b></div>'
+    +'<div class="pill"><span class="dot a"></span>Atenção <b>'+a+'</b></div>'
     +'<div class="pill"><span class="dot r"></span>Atrasados <b>'+r+'</b></div>'
-    +'<div class="pill">&#128101; <b>'+t.alunos.length+'</b></div></div>';
+    +'<div class="pill">👥 <b>'+t.alunos.length+'</b></div></div>';
   h+='<div class="tabelaWrap"><table><thead><tr><th class="colAluno">Aluno</th>';
-  t.licoes.forEach(function(l){ h+='<th>'+l.nome+'<span class="x" onclick="delLicao(''+l.id+'')">\u2715</span></th>'; });
-  h+='<th class="colFim">Situa\u00e7\u00e3o</th></tr></thead><tbody>';
-  t.alunos.forEach(function(al){
-    h+='<tr><td class="colAluno"><div class="nomeAluno"><span>'+al.nome+'</span><span class="x" onclick="delAluno(''+al.id+'')">\u2715</span></div></td>';
-    t.licoes.forEach(function(l){ var x=(t.desempenho[al.id]||{})[l.id]||0;
-      h+='<td><div class="cel s'+x+'" onclick="cicloD(''+al.id+'',''+l.id+'')">'+SD[x]+'</div></td>'; });
-    var e=aproveitamento(t,al.id);
-    h+= e.pct==null ? '<td class="colFim"><span class="badge n">sem li\u00e7\u00f5es</span></td>'
-      : '<td class="colFim"><span class="badge '+e.cls+'">'+e.txt+'</span><span class="pct">'+e.pct+'%</span></td>';
+  t.licoes.forEach(l=> h+='<th>'+esc(l.nome)+' <span class="edt" onclick="editLicao(\''+l.id+'\')">✎</span><span class="x" onclick="delLicao(\''+l.id+'\')">✕</span></th>');
+  h+='<th class="colFim">Situação</th></tr></thead><tbody>';
+  t.alunos.forEach(al=>{
+    h+='<tr><td class="colAluno"><div class="nomeAluno"><span>'+esc(al.nome)+'</span><span class="edt" onclick="editAluno(\''+al.id+'\')">✎</span><span class="x" onclick="delAluno(\''+al.id+'\')">✕</span></div></td>';
+    t.licoes.forEach(l=>{ const x=(t.desempenho[al.id]||{})[l.id]||0; h+='<td><div class="cel s'+x+'" onclick="cicloD(\''+al.id+'\',\''+l.id+'\')">'+SD[x]+'</div></td>'; });
+    const e=aproveitamento(t,al.id);
+    h+= e.pct==null?'<td class="colFim"><span class="badge n">sem lições</span></td>'
+      :'<td class="colFim"><span class="badge '+e.cls+'">'+e.txt+'</span><span class="pct">'+e.pct+'%</span></td>';
     h+='</tr>';
   });
   h+='</tbody></table></div>';
   h+='<div class="legenda"><b>Legenda:</b>'
-    +'<span><span class="qd" style="background:rgba(43,182,115,.4)"></span>\u2713 Concluiu</span>'
-    +'<span><span class="qd" style="background:rgba(232,169,60,.4)"></span>\u25d0 Em parte</span>'
-    +'<span><span class="qd" style="background:rgba(225,87,76,.35)"></span>\u2715 N\u00e3o fez</span>'
-    +'<span style="color:#9aa3a9">Clique pra mudar.</span></div>';
+    +'<span><span class="qd" style="background:rgba(43,182,115,.4)"></span>✓ Concluiu</span>'
+    +'<span><span class="qd" style="background:rgba(232,169,60,.4)"></span>◐ Em parte</span>'
+    +'<span><span class="qd" style="background:rgba(225,87,76,.35)"></span>✕ Não fez</span>'
+    +'<span style="color:#9aa3a9">Clique na célula pra marcar · ✎ corrige · ✕ remove.</span></div>';
   el.innerHTML=h;
 }
 
+/* ---- FREQUÊNCIA ---- */
 function renderFrequencia(t){
-  var el=document.getElementById('sec-frequencia');
-  var h='<div class="subbar">'+rosterAddHTML('novoAlunoF')+'<div class="sep"></div>'
+  const el=document.getElementById('sec-frequencia');
+  let h='<div class="subbar">'+rosterAddHTML('novoAlunoF')+'<div class="sep"></div>'
     +'<button class="btn" onclick="addDataHoje()">+ Aula de hoje ('+hoje()+')</button>'
-    +'<input id="novaData" placeholder="ou data: 12/06" style="min-width:120px" onkeydown="if(event.key==='Enter')addDataCustom()">'
+    +'<input id="novaData" placeholder="ou data: 12/06" style="min-width:120px" onkeydown="if(event.key===\'Enter\')addDataCustom()">'
     +'<button class="btn cinza" onclick="addDataCustom()">+</button></div>';
   if(!t.alunos.length){ el.innerHTML=h+vazioAlunos(); return; }
   h+='<div class="tabelaWrap"><table><thead><tr><th class="colAluno">Aluno</th>';
-  t.datas.forEach(function(d){ h+='<th>'+d.rotulo+'<span class="x" onclick="delData(''+d.id+'')">\u2715</span></th>'; });
-  h+='<th class="colFim">Frequ\u00eancia</th></tr></thead><tbody>';
-  t.alunos.forEach(function(al){
-    h+='<tr><td class="colAluno"><div class="nomeAluno"><span>'+al.nome+'</span><span class="x" onclick="delAluno(''+al.id+'')">\u2715</span></div></td>';
-    t.datas.forEach(function(d){ var x=(t.presenca[al.id]||{})[d.id]||0;
-      h+='<td><div class="cel s'+x+'" onclick="cicloP(''+al.id+'',''+d.id+'')">'+SP[x]+'</div></td>'; });
-    var f=freq(t,al.id);
-    h+= f.pct==null ? '<td class="colFim"><span class="badge n">\u2014</span></td>'
-      : '<td class="colFim"><span class="badge '+(f.pct>=75?'v':(f.pct>=50?'a':'r'))+'">'+f.pct+'%</span><span class="pct">'+f.f+' falta(s)</span></td>';
+  t.datas.forEach(d=> h+='<th>'+esc(d.rotulo)+' <span class="edt" onclick="editData(\''+d.id+'\')">✎</span><span class="x" onclick="delData(\''+d.id+'\')">✕</span></th>');
+  h+='<th class="colFim">Frequência</th></tr></thead><tbody>';
+  t.alunos.forEach(al=>{
+    h+='<tr><td class="colAluno"><div class="nomeAluno"><span>'+esc(al.nome)+'</span><span class="edt" onclick="editAluno(\''+al.id+'\')">✎</span><span class="x" onclick="delAluno(\''+al.id+'\')">✕</span></div></td>';
+    t.datas.forEach(d=>{ const x=(t.presenca[al.id]||{})[d.id]||0; h+='<td><div class="cel s'+x+'" onclick="cicloP(\''+al.id+'\',\''+d.id+'\')">'+SP[x]+'</div></td>'; });
+    const f=freq(t,al.id);
+    h+= f.pct==null?'<td class="colFim"><span class="badge n">—</span></td>'
+      :'<td class="colFim"><span class="badge '+(f.pct>=75?'v':(f.pct>=50?'a':'r'))+'">'+f.pct+'%</span><span class="pct">'+f.f+' falta(s)</span></td>';
     h+='</tr>';
   });
   h+='</tbody></table></div>';
@@ -297,117 +364,108 @@ function renderFrequencia(t){
     +'<span><span class="qd" style="background:rgba(43,182,115,.4)"></span>P Presente</span>'
     +'<span><span class="qd" style="background:rgba(225,87,76,.35)"></span>F Falta</span>'
     +'<span><span class="qd" style="background:rgba(232,169,60,.4)"></span>A Atraso/Justif.</span>'
-    +'<span style="color:#9aa3a9">Clique pra mudar.</span></div>';
+    +'<span style="color:#9aa3a9">Clique pra marcar.</span></div>';
   el.innerHTML=h;
 }
-function grafico(t,al,W,H){
-  var n=t.licoes.length;
-  if(n<2) return '<div class="vazio" style="padding:24px">Adicione e marque pelo menos <b>2 li\u00e7\u00f5es</b> pra ver a evolu\u00e7\u00e3o.</div>';
-  var padL=38,padR=14,padT=14,padB=30;
-  function xF(i){ return padL+(i/(n-1))*(W-padL-padR); }
-  function yF(v){ return padT+(1-v/100)*(H-padT-padB); }
-  var g='';
-  [0,50,100].forEach(function(v){ var y=yF(v); g+='<line x1="'+padL+'" y1="'+y+'" x2="'+(W-padR)+'" y2="'+y+'" stroke="#e6eaed"/>'
-    +'<text x="6" y="'+(y+4)+'" font-size="11" fill="#9aa3a9">'+v+'</text>'; });
-  var pts=[]; t.licoes.forEach(function(l,i){ var v=(t.desempenho[al]||{})[l.id]; if(v in SCORE) pts.push({x:xF(i),y:yF(SCORE[v])}); });
-  var med=[]; t.licoes.forEach(function(l,i){ var s=0,c=0; t.alunos.forEach(function(a){ var v=(t.desempenho[a.id]||{})[l.id]; if(v in SCORE){s+=SCORE[v];c++;} }); if(c) med.push({x:xF(i),y:yF(s/c)}); });
-  function path(a){ return a.map(function(p,i){ return (i?'L':'M')+p.x.toFixed(1)+' '+p.y.toFixed(1); }).join(' '); }
-  if(med.length>1) g+='<path d="'+path(med)+'" fill="none" stroke="#b9c4ca" stroke-width="2" stroke-dasharray="5 5"/>';
-  if(pts.length>1) g+='<path d="'+path(pts)+'" fill="none" stroke="#1F7A8C" stroke-width="3"/>';
-  pts.forEach(function(p){ g+='<circle cx="'+p.x+'" cy="'+p.y+'" r="4.5" fill="#1F7A8C"/>'; });
-  t.licoes.forEach(function(l,i){ g+='<text x="'+xF(i)+'" y="'+(H-10)+'" font-size="10" fill="#9aa3a9" text-anchor="middle">'+(i+1)+'</text>'; });
-  return '<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-width:'+W+'px;background:#fafcfc;border:1px solid var(--linha);border-radius:10px">'+g+'</svg>'
-    +'<div class="legenda"><span><span class="qd" style="background:#1F7A8C"></span>Este aluno</span>'
-    +'<span><span class="qd" style="background:#b9c4ca"></span>M\u00e9dia da turma</span>'
-    +'<span style="color:#9aa3a9">Eixo X = n\u00famero da li\u00e7\u00e3o.</span></div>';
-}
 
+/* ---- EVOLUÇÃO ---- */
 function renderEvolucao(t){
-  var el=document.getElementById('sec-evolucao');
+  const el=document.getElementById('sec-evolucao');
   if(!t.alunos.length){ el.innerHTML=vazioAlunos(); return; }
-  if(!ui.evoAluno||!t.alunos.find(function(a){return a.id===ui.evoAluno;})) ui.evoAluno=t.alunos[0].id;
-  var h='<div class="subbar"><label style="font-weight:700;font-size:13px">Aluno:</label><select onchange="ui.evoAluno=this.value;render()">';
-  t.alunos.forEach(function(a){ h+='<option value="'+a.id+'"'+(a.id===ui.evoAluno?' selected':'')+'>'+a.nome+'</option>'; });
+  if(!ui.evoAluno||!t.alunos.find(a=>a.id===ui.evoAluno)) ui.evoAluno=t.alunos[0].id;
+  let h='<div class="subbar"><label style="font-weight:700;font-size:13px">Aluno:</label><select onchange="ui.evoAluno=this.value;render()">';
+  t.alunos.forEach(a=> h+='<option value="'+a.id+'" '+(a.id===ui.evoAluno?'selected':'')+'>'+esc(a.nome)+'</option>');
   h+='</select></div>';
-  var f=freq(t,ui.evoAluno), ap=aproveitamento(t,ui.evoAluno);
-  h+='<div class="resumo"><div class="pill">Aproveitamento <b>'+(ap.pct==null?'\u2014':ap.pct+'%')+'</b></div>'
-    +'<div class="pill">Frequ\u00eancia <b>'+(f.pct==null?'\u2014':f.pct+'%')+'</b></div>'
+  const f=freq(t,ui.evoAluno), ap=aproveitamento(t,ui.evoAluno);
+  h+='<div class="resumo"><div class="pill">Aproveitamento <b>'+(ap.pct==null?'—':ap.pct+'%')+'</b></div>'
+    +'<div class="pill">Frequência <b>'+(f.pct==null?'—':f.pct+'%')+'</b></div>'
     +'<div class="pill">Faltas <b>'+f.f+'</b></div></div>';
   h+=grafico(t,ui.evoAluno,640,260);
   el.innerHTML=h;
 }
+function grafico(t,al,W,H){
+  const n=t.licoes.length;
+  if(n<2) return '<div class="vazio" style="padding:24px">Adicione e marque pelo menos <b>2 lições</b> pra ver a evolução.</div>';
+  const padL=38,padR=14,padT=14,padB=30;
+  const xF=i=> padL+(i/(n-1))*(W-padL-padR);
+  const yF=v=> padT+(1-v/100)*(H-padT-padB);
+  let g='';
+  [0,50,100].forEach(v=>{ const y=yF(v); g+='<line x1="'+padL+'" y1="'+y+'" x2="'+(W-padR)+'" y2="'+y+'" stroke="#e6eaed"/><text x="6" y="'+(y+4)+'" font-size="11" fill="#9aa3a9">'+v+'</text>'; });
+  const pts=[]; t.licoes.forEach((l,i)=>{ const v=(t.desempenho[al]||{})[l.id]; if(v in SCORE) pts.push({x:xF(i),y:yF(SCORE[v])}); });
+  const med=[]; t.licoes.forEach((l,i)=>{ let s=0,c=0; t.alunos.forEach(a=>{ const v=(t.desempenho[a.id]||{})[l.id]; if(v in SCORE){s+=SCORE[v];c++;} }); if(c) med.push({x:xF(i),y:yF(s/c)}); });
+  const path=a=> a.map((p,i)=>(i?'L':'M')+p.x.toFixed(1)+' '+p.y.toFixed(1)).join(' ');
+  if(med.length>1) g+='<path d="'+path(med)+'" fill="none" stroke="#b9c4ca" stroke-width="2" stroke-dasharray="5 5"/>';
+  if(pts.length>1) g+='<path d="'+path(pts)+'" fill="none" stroke="#1F7A8C" stroke-width="3"/>';
+  pts.forEach(p=> g+='<circle cx="'+p.x+'" cy="'+p.y+'" r="4.5" fill="#1F7A8C"/>');
+  t.licoes.forEach((l,i)=> g+='<text x="'+xF(i)+'" y="'+(H-10)+'" font-size="10" fill="#9aa3a9" text-anchor="middle">'+(i+1)+'</text>');
+  return '<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-width:'+W+'px;background:#fafcfc;border:1px solid var(--linha);border-radius:10px">'+g+'</svg>'
+    +'<div class="legenda"><span><span class="qd" style="background:#1F7A8C"></span>Este aluno</span>'
+    +'<span><span class="qd" style="background:#b9c4ca"></span>Média da turma</span>'
+    +'<span style="color:#9aa3a9">Eixo X = número da lição.</span></div>';
+}
 
+/* ---- COMPORTAMENTO ---- */
 function renderComportamento(t){
-  var el=document.getElementById('sec-comportamento');
+  const el=document.getElementById('sec-comportamento');
   if(!t.alunos.length){ el.innerHTML=vazioAlunos(); return; }
-  if(!ui.compAluno||!t.alunos.find(function(a){return a.id===ui.compAluno;})) ui.compAluno=t.alunos[0].id;
-  var h='<div class="subbar"><label style="font-weight:700;font-size:13px">Aluno:</label><select onchange="ui.compAluno=this.value;render()">';
-  t.alunos.forEach(function(a){ h+='<option value="'+a.id+'"'+(a.id===ui.compAluno?' selected':'')+'>'+a.nome+'</option>'; });
-  h+='</select></div>'
-    +'<div class="subbar" style="border:none">'
-    +'<select id="notaTipo"><option value="positivo">\u2b50 Positivo</option><option value="atencao">\u26a0\ufe0f Aten\u00e7\u00e3o</option><option value="negativo">\u26d4 Negativo</option></select>'
-    +'<input id="notaTxt" placeholder="Anota\u00e7\u00e3o (ex: participou muito bem)" style="flex:1;min-width:260px" onkeydown="if(event.key==='Enter')addNota()">'
-    +'<button class="btn" onclick="addNota()">+ Anotar</button>'
-    +'</div><div class="notas">';
-  var lista=(t.comportamento[ui.compAluno]||[]).slice().reverse();
-  if(!lista.length) h+='<div class="vazio" style="padding:20px">Sem anota\u00e7\u00f5es ainda.</div>';
-  lista.forEach(function(nt){ h+='<div class="nota '+nt.tipo+'"><span class="data">'+nt.data+'</span>'
-    +'<span class="txt">'+nt.txt+'</span><span class="rem" onclick="remNota(''+nt.id+'')">\u2715</span></div>'; });
+  if(!ui.compAluno||!t.alunos.find(a=>a.id===ui.compAluno)) ui.compAluno=t.alunos[0].id;
+  let h='<div class="subbar"><label style="font-weight:700;font-size:13px">Aluno:</label><select onchange="ui.compAluno=this.value;render()">';
+  t.alunos.forEach(a=> h+='<option value="'+a.id+'" '+(a.id===ui.compAluno?'selected':'')+'>'+esc(a.nome)+'</option>');
+  h+='</select></div><div class="subbar" style="border:none">'
+    +'<select id="notaTipo"><option value="positivo">⭐ Positivo</option><option value="atencao">⚠️ Atenção</option><option value="negativo">⛔ Negativo</option></select>'
+    +'<input id="notaTxt" placeholder="Anotação (ex: participou muito bem)" style="flex:1;min-width:260px" onkeydown="if(event.key===\'Enter\')addNota()">'
+    +'<button class="btn" onclick="addNota()">+ Anotar</button></div><div class="notas">';
+  const lista=(t.comportamento[ui.compAluno]||[]).slice().reverse();
+  if(!lista.length) h+='<div class="vazio" style="padding:20px">Sem anotações ainda.</div>';
+  lista.forEach(nt=> h+='<div class="nota '+nt.tipo+'"><span class="data">'+nt.data+'</span><span class="txt">'+esc(nt.txt)+'</span><span class="rem" onclick="remNota(\''+nt.id+'\')">✕</span></div>');
   h+='</div>';
   el.innerHTML=h;
 }
-
-function addNota(){ var t=T(); var al=ui.compAluno; var tipo=document.getElementById('notaTipo').value;
-  var txt=document.getElementById('notaTxt').value.trim(); if(!txt)return;
+function addNota(){ const t=T(); const al=ui.compAluno; const tipo=document.getElementById('notaTipo').value;
+  const txt=document.getElementById('notaTxt').value.trim(); if(!txt)return;
   if(!t.comportamento[al])t.comportamento[al]=[];
-  t.comportamento[al].push({id:uid(),data:hoje(),tipo:tipo,txt:txt}); document.getElementById('notaTxt').value='';
-  render(); salvar(); }
-function remNota(id){ var t=T(); var al=ui.compAluno;
-  t.comportamento[al]=(t.comportamento[al]||[]).filter(function(n){return n.id!==id;}); render(); salvar(); }
+  t.comportamento[al].push({id:uid(),data:hoje(),tipo,txt}); document.getElementById('notaTxt').value=''; render(); salvar(); }
+function remNota(id){ const t=T(); const al=ui.compAluno; modalConfirma('Remover esta anotação?', ()=>{
+  t.comportamento[al]=(t.comportamento[al]||[]).filter(n=>n.id!==id); render(); salvar(); }); }
 
+/* ---- BOLETIM ---- */
 function renderBoletim(t){
-  var el=document.getElementById('sec-boletim');
+  const el=document.getElementById('sec-boletim');
   if(!t.alunos.length){ el.innerHTML='<div class="painel"><div class="vazio">Adicione alunos pra gerar o boletim.</div></div>'; return; }
-  var h='<div class="painel noprint"><div class="subbar" style="border:none;margin:0">'
-    +'<label style="font-weight:700;font-size:13px">Aluno:</label>'
-    +'<select onchange="ui.boletimAluno=this.value;render()">'
-    +'<option value="__todos__"'+(ui.boletimAluno==='__todos__'?' selected':'')+'>Todos os alunos</option>';
-  t.alunos.forEach(function(a){ h+='<option value="'+a.id+'"'+(a.id===ui.boletimAluno?' selected':'')+'>'+a.nome+'</option>'; });
-  h+='</select><button class="btn" onclick="window.print()">&#128424;&#65039; Imprimir boletim</button>'
-    +'<span style="font-size:12px;color:#8a949b">Imprime um por folha.</span></div></div>';
-  var alvos = ui.boletimAluno==='__todos__'? t.alunos : t.alunos.filter(function(a){return a.id===ui.boletimAluno;});
-  alvos.forEach(function(a){ h+=boletimHTML(t,a); });
+  let h='<div class="painel noprint"><div class="subbar" style="border:none;margin:0"><label style="font-weight:700;font-size:13px">Aluno:</label>'
+    +'<select onchange="ui.boletimAluno=this.value;render()"><option value="__todos__" '+(ui.boletimAluno==='__todos__'?'selected':'')+'>Todos os alunos</option>';
+  t.alunos.forEach(a=> h+='<option value="'+a.id+'" '+(a.id===ui.boletimAluno?'selected':'')+'>'+esc(a.nome)+'</option>');
+  h+='</select><button class="btn" onclick="window.print()">🖨️ Imprimir boletim</button><span style="font-size:12px;color:#8a949b">Imprime um por folha.</span></div></div>';
+  const alvos = ui.boletimAluno==='__todos__'? t.alunos : t.alunos.filter(a=>a.id===ui.boletimAluno);
+  alvos.forEach(a=> h+=boletimHTML(t,a));
   el.innerHTML=h;
 }
-
 function boletimHTML(t,al){
-  var ap=aproveitamento(t,al.id), f=freq(t,al.id);
-  var lic=''; if(t.licoes.length){ lic='<table class="miniTab">'; t.licoes.forEach(function(l){ var v=(t.desempenho[al.id]||{})[l.id]||0;
-    lic+='<tr><td>'+l.nome+'</td><td style="text-align:center;width:60px">'+['\u2014','\u2713 Concluiu','\u25d0 Em parte','\u2715 N\u00e3o fez'][v]+'</td></tr>'; }); lic+='</table>'; }
-  else lic='<p style="color:#8a949b;font-size:13px">Nenhuma li\u00e7\u00e3o cadastrada.</p>';
-  var notas=(t.comportamento[al.id]||[]);
-  var comp=''; if(notas.length){ comp='<div class="notas">'; notas.slice().reverse().forEach(function(n){
-    comp+='<div class="nota '+n.tipo+'"><span class="data">'+n.data+'</span><span class="txt">'+n.txt+'</span></div>'; }); comp+='</div>'; }
-  else comp='<p style="color:#8a949b;font-size:13px">Sem anota\u00e7\u00f5es.</p>';
-  return '<div class="boletim">'
-    +'<h2>Boletim de Acompanhamento</h2>'
-    +'<div class="meta"><b>'+al.nome+'</b> &nbsp;&middot;&nbsp; '+t.nome+' &nbsp;&middot;&nbsp; Emitido em '+hoje()+(dados.professor?' &nbsp;&middot;&nbsp; Prof. '+dados.professor:'')+'</div>'
-    +'<div class="bloco"><h4>Desempenho nas li\u00e7\u00f5es</h4>'+lic
-    +'<p style="margin-top:8px"><b>Aproveitamento:</b> '+(ap.pct==null?'\u2014':ap.pct+'% ')+'<span class="badge '+(ap.cls||'n')+'">'+(ap.txt||'\u2014')+'</span></p></div>'
-    +'<div class="bloco"><h4>Frequ\u00eancia</h4>'
-    +'<p>Presen\u00e7as: <b>'+f.p+'</b> &nbsp;|&nbsp; Faltas: <b>'+f.f+'</b> &nbsp;|&nbsp; Atrasos/Justif.: <b>'+f.a+'</b> &nbsp;|&nbsp; Frequ\u00eancia: <b>'+(f.pct==null?'\u2014':f.pct+'%')+'</b></p></div>'
-    +'<div class="bloco"><h4>Evolu\u00e7\u00e3o nas li\u00e7\u00f5es</h4>'+grafico(t,al.id,640,240)+'</div>'
+  const ap=aproveitamento(t,al.id), f=freq(t,al.id);
+  let lic=''; if(t.licoes.length){ lic='<table class="miniTab">'; t.licoes.forEach(l=>{ const v=(t.desempenho[al.id]||{})[l.id]||0;
+    lic+='<tr><td>'+esc(l.nome)+'</td><td style="text-align:center;width:70px">'+['—','✓ Concluiu','◐ Em parte','✕ Não fez'][v]+'</td></tr>'; }); lic+='</table>'; }
+  else lic='<p style="color:#8a949b;font-size:13px">Nenhuma lição cadastrada.</p>';
+  const notas=(t.comportamento[al.id]||[]);
+  let comp=''; if(notas.length){ comp='<div class="notas">'; notas.slice().reverse().forEach(n=> comp+='<div class="nota '+n.tipo+'"><span class="data">'+n.data+'</span><span class="txt">'+esc(n.txt)+'</span></div>'); comp+='</div>'; }
+  else comp='<p style="color:#8a949b;font-size:13px">Sem anotações.</p>';
+  return '<div class="boletim"><h2>Boletim de Acompanhamento</h2>'
+    +'<div class="meta"><b>'+esc(al.nome)+'</b> &nbsp;·&nbsp; '+esc(t.nome)+' &nbsp;·&nbsp; Emitido em '+hoje()+(dados.professor?' &nbsp;·&nbsp; Prof. '+esc(dados.professor):'')+'</div>'
+    +'<div class="bloco"><h4>Desempenho nas lições</h4>'+lic
+    +'<p style="margin-top:8px"><b>Aproveitamento:</b> '+(ap.pct==null?'—':ap.pct+'% ')+'<span class="badge '+(ap.cls||'n')+'">'+(ap.txt||'—')+'</span></p></div>'
+    +'<div class="bloco"><h4>Frequência</h4><p>Presenças: <b>'+f.p+'</b> &nbsp;|&nbsp; Faltas: <b>'+f.f+'</b> &nbsp;|&nbsp; Atrasos/Justif.: <b>'+f.a+'</b> &nbsp;|&nbsp; Frequência: <b>'+(f.pct==null?'—':f.pct+'%')+'</b></p></div>'
+    +'<div class="bloco"><h4>Evolução nas lições</h4>'+grafico(t,al.id,640,240)+'</div>'
     +'<div class="bloco"><h4>Comportamento</h4>'+comp+'</div>'
-    +'<div class="assinatura"><div>'+(dados.professor||'Professor(a)')+'<br><small>Professor(a)</small></div><div>'+hoje()+'<br><small>Data</small></div></div>'
-    +'</div>';
+    +'<div class="assinatura"><div>'+(esc(dados.professor)||'Professor(a)')+'<br><small>Professor(a)</small></div><div>'+hoje()+'<br><small>Data</small></div></div></div>';
 }
 
-function baixarBackup(){ var b=new Blob([JSON.stringify(dados,null,2)],{type:'application/json'});
-  var a=document.createElement('a'); a.href=URL.createObjectURL(b); a.download='painel-professor-backup.json'; a.click(); URL.revokeObjectURL(a.href); }
-function abrirBackup(ev){ var f=ev.target.files[0]; if(!f)return; var r=new FileReader();
-  r.onload=function(){ try{ var d=JSON.parse(r.result); if(d.turmas){ dados=d; dados.turmas.forEach(migra); if(dados.atual==null&&dados.turmas.length)dados.atual=dados.turmas[0].id; render(); salvar(); alert('Backup carregado!'); } else alert('Arquivo inv\u00e1lido.'); }catch(e){ alert('N\u00e3o consegui ler o arquivo.'); } };
+/* ===== BACKUP ===== */
+function baixarBackup(){ const b=new Blob([JSON.stringify(dados,null,2)],{type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(b); a.download='painel-professor-backup.json'; a.click(); URL.revokeObjectURL(a.href); }
+function abrirBackup(ev){ const f=ev.target.files[0]; if(!f)return; const r=new FileReader();
+  r.onload=()=>{ try{ const d=JSON.parse(r.result); if(d.turmas){ dados=d; dados.turmas.forEach(migra); if(dados.atual==null&&dados.turmas.length)dados.atual=dados.turmas[0].id; render(); salvar(); aviso('Backup carregado!'); } else aviso('Arquivo inválido.'); }catch(e){ aviso('Não consegui ler o arquivo.'); } };
   r.readAsText(f); ev.target.value=''; }
 
+/* ===== INÍCIO ===== */
 (async function(){ await carregar(); dados.turmas.forEach(migra); render(); })();
 </script>
 </body>
